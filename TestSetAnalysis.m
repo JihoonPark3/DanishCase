@@ -15,9 +15,7 @@ for k=1:NResp
     Data.ErrorAnalysis.Corr(k)=corr(Data.Test.Y(:,k),Data.ErrorAnalysis.TestPredicted(:,k));
     Data.ErrorAnalysis.ErrorsAll(:,k)=Data.Test.Y(:,k)-Data.ErrorAnalysis.TestPredicted(:,k);
 end
-% Stop for now.....
-% Resume 25 Jan 2017.
-% 나는 해야만 한다. 
+
 
 if IsPlot==1
     DisplayAllCrossPlots(Data.Test.Y,Data.ErrorAnalysis.TestPredicted,ResponsesNames,4,40)
